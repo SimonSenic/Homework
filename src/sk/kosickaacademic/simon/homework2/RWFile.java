@@ -17,6 +17,8 @@ public class RWFile {
                 for(int i=0; i<temp.length; i++) arr.add(Integer.parseInt(temp[i]));
                 line = read.readLine();
             }
+            fr.close();
+            read.close();
         }catch(IOException e){
             e.printStackTrace();
         }
@@ -34,6 +36,8 @@ public class RWFile {
                 for(int i=0; i<temp.length; i++) arr.add(Integer.parseInt(temp[i]));
                 line = read.readLine();
             }
+            fr.close();
+            read.close();
         }catch(IOException e){
             e.printStackTrace();
         }
