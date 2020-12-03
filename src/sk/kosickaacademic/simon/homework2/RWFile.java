@@ -49,8 +49,8 @@ public class RWFile {
     }
 
     public void writeFileB(ArrayList<Integer> arrA, ArrayList<Integer> arrB){
-        ArrayList<Integer> tempA = arrA;
-        ArrayList<Integer> tempB = arrB;
+        ArrayList<Integer> tempA = new ArrayList<>(arrA);
+        ArrayList<Integer> tempB = new ArrayList<>(arrB);
         for(int i=0; i<tempA.size(); i++)
             if(tempB.contains(tempA.get(i))) tempB.remove(tempA.get(i));
         System.out.println("b: " +tempB);
